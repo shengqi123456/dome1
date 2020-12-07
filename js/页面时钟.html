@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+当前系统时间：<span id="d1"></span>
+</body>
+<script>
+    setInterval(function () {
+        var d=new Date();
+        var year=d.getFullYear();
+        var moth =d.getMonth()+1;
+        var date =d.getHours();
+        var hour=d.getHours();
+        var min=d.getMinutes()
+        var sec=d.getSeconds();
+        var result=year+'年'+moth+'月'+date+'日'+hour+'时'+min+'分'+sec+'秒';
+        console.log(result);
+        var span=document.getElementById('d1');
+        span.innerText=result;
+    },1000)
+</script>
+</html>

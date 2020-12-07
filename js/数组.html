@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组</title>
+</head>
+<body>
+
+</body>
+<script>
+    // var arr =new Array('zs',13,'男');
+    // console.log(arr);
+    // console.log(arr.length);
+    // console.log(arr[0]);
+    //直接创建
+    arr=['zs','lis','ww'];
+    console.log(arr);
+    // console.log(arr.length);
+    // for ( var i in arr){
+    //     console.log(arr[i])
+    // }
+    //增加数据
+    arr.push('zhaolku');//在末尾增加
+    console.log(arr);
+    arr.unshift('sadg');//在开头增加
+    console.log(arr);
+    console.log(arr[4]);//通过索引获取
+    arr.pop();//删除最后一个
+    console.log(arr);
+    arr.shift();//删除最开始的元素
+    console.log(arr);
+    //splice
+    //第一个：开始替换的索引位置
+    //第二个：被替换的个数
+    //a,b,c表示新增好元素
+    arr.splice(1,2,"a","b","c");
+    console.log(arr);
+    var arr1=[function (a,b) {
+        console.log(a+b);
+    },
+        function (a,b) {
+        console.log(a-b);
+
+    }
+    ];
+    arr1[0](10,8);
+</script>
+</html>

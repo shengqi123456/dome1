@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        *{
+            margin: 0 auto;
+
+        }
+
+        #zgzf_ycxf {
+            width: 100px;
+            height:300px;
+            background: url(images/1.jpg);
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            margin-top: -253px;
+            z-index: 96;
+
+        }
+    </style>
+    <script>
+        window.onload=function () {
+            var dav1=document.getElementsByClassid("zgzf_ycxf");
+            console.log(dav1[0]);
+            dav1.style.color="red";
+            dav1.style.background="bull";
+        }
+    </script>
+    <title>Title</title>
+</head>
+<body>
+<div id="zgzf_ycxf"></div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .c1{
+            background: #6dffc2;
+        }
+        .c2{
+            background: #ff4baa;
+        }
+    </style>
+</head>
+<body>
+
+</body>
+<script>
+    // var num=Number("123")
+    // console.log(num)
+    // console.log(typeof num)
+    // var num=Number("123abc");
+    // console.log(num);//NaN not a number
+    // console.log(typeof num);//number
+    //从左开始解析，遇到第一步是数字的内容停止解析
+    // var num=parseInt("123asd");
+    // console.log(num);
+    // console.log(typeof  num);
+    // var num=parseFloat("123.43asd");
+    //  console.log(num);
+    //boolean转换
+    // var b1=Boolean("true");
+    // console.log(b1);
+    // console.log(typeof b1);
+    // var b2=Boolean(" ");
+    // console.log(b2);
+    // var b3=Boolean(0.0);
+    // console.log(b3);
+    // var b4=Boolean(null);
+    // console.log(b4)
+    // //算数运算符
+    // var a=10;
+    // var b=2;
+    // console.log(a+b);
+    // console.log(a-b);
+    // console.log(a*b);
+    // console.log(a/b);
+    // console.log(a%b);
+    // a++;//等价 a=a+1
+    // console.log(a);
+    // console.log(193*47*887*29);
+    // c=a++;
+    // console.log(a,c);
+    // f=a--;
+    // console.log(f);
+    // //三目表达式
+    // var abc=21 <3?alert("你"): alert("我");
+    // //分支语句
+    // var age =10;
+    // if (age<=18){
+    //     alert("请回家");
+    // }
+    // var text=13;
+    // if (text<=29){
+    //     console.log("回家");
+    // }
+    // else {
+    //     console.log("不回");
+    // }
+    // var p=43;
+    // if (p>=60&&p<=80){
+    //     console.log("一般般");
+    // } else if (p>80 && p<=90){
+    //     console.log("低调");
+    // }else if (p>90&&p<=100){
+    //     console.log("更加低调");
+    // }else{
+    //     console.log("良好");
+    // }
+    // //switch ...case..语句
+    // var day=2;
+    // switch (day) {
+    //     case 1:
+    //         console.log("星期一");
+    //         break;
+    //     case 2:
+    //         console.log("星期二");
+    //         break;
+    //     case 3:
+    //         console.log("星期三");
+    //         break;
+    //     default:
+    //         console.log("我是default")
+    // }
+    //     //for 循环
+    // for ( var ie in "abc"){
+    //     console.log(ie,"abc['ie']");
+    // }
+    // for (var j=0;j<4;j++)   {
+    //     console.log(j);
+    // }
+    // for (var l=0;l <4;l++){
+    //     console.log(l);
+    // }
+    // for (var li=4;li<3;i++){
+    //     console.log(i)
+    // }
+    //
+    // for (let i = 0; i >0 ; i++) {
+    //     console.log(i)
+    // }
+    // console.log("程序结束");
+    // var z=1;
+    // while (z<4){
+    //     console.log(z);
+    //     z++;
+    // }
+    // var p1 = 1;
+    // while (p1<4){
+    //
+    //     p1++;
+    //     if (p1==2){
+    //         continue;
+    //
+    //     }
+    //     console.log(p1);
+    // }
+    //外层循环控制行
+    //内层循环控制列
+    var tab='<table >';
+    for (var i = 1; i <10 ; i++) {
+        if (i%2==0){
+            var tr='<tr class="c1">';
+        }else {
+            var tr='<tr class="c2">';
+        }
+
+        for (var j = 1; j <=i ; j++) {
+            // if(j%2==0){
+            //     var td='<td style=background-color:red;>';
+            // }else {
+            //     var td='<td style=background-color:yellow;>';
+            // }
+            var td='<td>';
+            var res=j+"*"+i+"="+j*i;
+            td+=res+'</td>';
+            tr+=td;
+        }
+       tr+='</tr>';
+        tab+=tr;
+    }
+    var res=tab+'<table/>';
+    document.write(res)
+</script>
+</html>

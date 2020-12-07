@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选项卡案例</title>
+    <link>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .outer {
+            width: 360px;
+            background-color: #dee2e6;
+            margin: 0 auto;
+        }
+
+        .panel {
+            display: none;
+        }
+        #pythonjc:target:hover{
+            display: block;
+        }
+        a{
+            text-decoration: none;
+            color: beige;
+        }
+        #pythonjc:target, #web:target, #pc:target {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="outer">
+    <div class="top">
+        <a href="#pythonjc">基础阶段</a>
+        <a href="#web">全栈阶段</a>
+        <a href="#pc">爬虫阶段</a>
+        <img src="">
+    </div>
+
+    <div class="panel" id="pythonjc">
+        python基础语法 <br/>
+        mysql数据库 <br/>
+        linux操作系统 <br/>
+        git版本控制 <br/>
+    </div>
+
+    <div class="panel" id="web">
+        前端 <br/>
+        Flask 框架 <br/>
+        Django框架 <br/>
+        Tornado框架 <br/>
+    </div>
+    <div class="panel" id="pc">
+        requests模块 <br/>
+        pantomjs <br/>
+        scrapy <br/>
+        mongodb <br/>
+    </div>
+</div>
+
+
+</body>
+</html>

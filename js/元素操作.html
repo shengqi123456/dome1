@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素操作</title>
+</head>
+<body>
+<div  class="c1">asd</div>
+<div id="d1">trw</div>
+<div id="d2">
+    <div>我是div1</div>
+    <div>我是div2</div>
+</div>
+</body>
+<script>
+    // var  div=document.getElementById('d1');
+    // var p=document.createElement('p');
+    // var pcontent=document.createTextNode('我是p');
+    // p.appendChild(pcontent);
+    // console.log(p);
+    // div.appendChild(p);
+    //克隆元素
+    // var div=document.getElementsByClassName('c1')[0];
+    // var div1=div.cloneNode(true);
+    // console.log(div1);
+    // var div2=document.getElementById('d1');
+    // div2.appendChild(div1);
+    //删除元素
+    var div=document.getElementById('d2');
+    console.log(div);
+    var allChild=div.childNodes;
+    console.log(allChild);
+    var resultDiv=allChild[1];
+    div.removeChild(resultDiv);
+</script>
+</html>

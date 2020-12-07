@@ -1,5 +1,6 @@
 import pymysql
 #1.连接数据库
+#cursorclass=pymysql.cursors.DictCursor 指定成字典类型
 da=pymysql.connect(host="127.0.0.1",user="root",password="root" ,database="demo",port=3306,cursorclass=pymysql.cursors.DictCursor)
 #2.创建游标
 cursor=da.cursor()

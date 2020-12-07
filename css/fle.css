@@ -1,0 +1,24 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+h2{
+    color: aliceblue;
+    background: orange;
+}
+div{
+    color: red;
+    background: aqua;
+}#kf_1{
+    background: url(../images/bg_1.png) no-repeat left fixed;
+    margin: 50%;
+}
+span{
+    color: beige;
+    background: azure;
+    border: 1px red solid;
+    margin-left: 100px;
+    opacity: 0.8;
+
+}

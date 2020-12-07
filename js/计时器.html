@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计数器</title>
+</head>
+
+<body>
+
+<button id="btn">我是按钮</button>
+</body>
+<script>
+    var interval=setInterval(function () {
+        console.log("我是计数器");
+
+    },1000);
+    var btn=document.getElementById("btn");
+    btn.onclick=function(){
+        clearInterval(interval);
+    }
+
+</script>
+</html>

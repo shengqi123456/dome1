@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件</title>
+</head>
+<style>
+    *{
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+    li{
+        list-style: none;
+    }
+</style>
+<body>
+<!--
+onclick：点击事件，当触发点击操作，或执行onclick中的js代码
+注意：不仅仅是按钮
+-->
+<input type="button" value="我是按钮" onclick="alert('我是弹窗！！');">
+<div id="d1">我是div</div>
+<ul>
+    <li>lol</li>
+    <li>cf</li>
+    <li>lol</li>
+</ul>
+<p>
+    用户名：<input id="user_name" type="text" placeholder="用户名">
+</p>
+<p>
+    密码：<input type="text" placeholder="密码">
+</p>
+<hr/>
+<h1>欢迎注册</h1>
+<p>
+   用户名 ：<input  id="user" type="text" placeholder="用户名"> <br/>
+    <span id="erro" style="color: red"></span>
+    密码：<input type="text" placeholder="密码">
+</p>
+<hr>
+<p>
+    <input type="text" id="jp" placeholder="请输入内容">
+</p>
+</body>
+<script>
+    window.onload=function () {
+        //1.
+        // var div=document.getElementById('d1');
+        // div.onclick=function () {
+        //     alert('我是div');
+        // }
+        var lis=document.getElementsByTagName('li');
+        for (var i = 0; i <lis.length; i++) {
+            lis[i].onclick=function () {
+                var content=this.innerText;
+                alert(content);
+            }
+        }
+        //$('li').click=funct
+        //失去焦点事件
+        var user=document.getElementById('user_name');
+        user.onblur=function () {
+            console.log("xxx");
+        };
+        //获取焦点事件
+        user.onfocus=function () {
+            console.log('获取了焦点')
+        };
+        var name=document.getElementById('user');
+        var span=document.getElementById('erro');
+        name.onblur=function () {
+
+            span.innerText="用户名太受欢迎"
+        };
+        name=onfocus=function () {
+            span.innerText="";
+        };
+        //键盘事件
+        var qq=document.getElementById('jp');
+        qq.onkeydown=function (event) {
+            console.log('我被按下');
+            console.log(event);
+            console.log(event.key);
+        };
+
+    }
+</script>
+</html>

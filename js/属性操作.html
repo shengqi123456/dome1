@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性操作</title>
+    <style>
+        .c1{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+<div id="d1" class="c1" >我的div</div>
+<span>我是span</span>
+</body>
+<script>
+    var div=document.getElementById('d1');
+    //hasAttribute：是否有指定的属性 ，如果有返回true否则返回false
+    // var b=div.hasAttribute('c1');
+    // console.log(b);
+    //hasAttributes:元素是否有属性值。
+    // var c=div.hasAttributes();
+    // console.log(b);
+    // var span=document.getElementsByTagName('span')[0];
+    // var d=span.hasAttributes();
+    // console.log(d)
+    // div.setAttribute('style','color:red');
+    // div.style.color="yellow";
+    //获取属性
+    // var att=div.getAttribute('class');
+    // console.log(att);
+    //删除属性
+    div.removeAttribute('class');
+</script>
+</html>
